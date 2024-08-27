@@ -1,0 +1,191 @@
+% !TeX program = xelatex
+% Run with XeLaTeX
+
+\documentclass[
+    changecolor={111, 156, 45}, 
+%    titlecolor=second,
+%    colorharmony={wheel,1,3}, 
+]{cv-roald}
+% Available options for cv-roald documentclass: 
+% 
+% - changecolor = {R, G, B} (default: {169, 53, 40} = sharelatex lion red)
+%   Changes the color of the header bar and the titles. 
+%   It expects a RGB color code where RGB go from 0-255.
+%
+% - colorharmony = {wheel,i,j} (defualt: {wheel,1,3})
+%   Choose the color harmony model you want to use.
+%     wheel = wheel or twheel
+%     i		= number < j
+%	  j		= for j-color harmony 
+%	    	  j=3 -> three color harmony or color triad
+% 	See page 37 of the xcolor manual for more information on commands: 
+% 	http://texdoc.net/texmf-dist/doc/latex/xcolor/xcolor.pdf  
+% 	Or check http://paletton.com to see how color harmonies work.
+%
+% - titlecolor = {colorname} (default: main)
+%	Change the colors of the titles. You can try: second, black!50, 
+%	green!40!yellow, etc.     	
+%
+%  The colors defined through changecolor and colorharmony are called 
+%  *main* and *second* and can be used in the main document.	
+\newcommand{\RomanNumeralCaps}[1]
+    {\MakeUppercase{\romannumeral #1}}
+
+\begin{document}
+\pagestyle{empty} %to remove the page numbers
+
+% This is the header on the first page. It contains your name and contact
+% details. 
+% \sep inserts a | between items. 
+% You can use FontAwesome icons and use \FAspace after a font awesome icon to
+% insert a predefined horizontal space after a font awesome icon icon.
+\header{Alejandro}{Cordoba}
+ {%
+  \faMapMarker \FAspace Medellin \sep Colombia \sep%
+  \faMobile \FAspace +57 301 323 8497\sep% 
+  \faGithub Bodhert \FAspace \link{https://github.com/bodhert}
+ }
+ {%
+  \faEnvelope \FAspace alejandro.cordoba.bodhert@gmail.com \sep% 
+  \faLinkedinSquare  \FAspace Alejandro Cordoba Bodhert \FAspace \link{https://bo.linkedin.com/in/alejandro-cordoba-bodhert-746598123}
+ }
+
+
+% Add a picture to the top right of the page. Comment or delete if you do not 
+% want a picture
+
+
+\textit{"Sooner than later, the discipline will beat the intelligence" , \textit{Yokoi Kenji}.}
+
+\section*{Profile}
+I love technology and solving problems with it, always trying to understand how things work and are built from scratch. I adapt quickly to changing environments. I have a solid foundation in \textbf{algorithms} and \textbf{software design}. \textbf{Communication} and \textbf{team working} are my best soft skills, always being \textbf{respectful}. \textbf{Disciplined} and with motivation for my and group goals. I love to learn from people and with them.
+
+
+
+\section*{Experience}
+\begin{tabularcv}
+2022-2024 & \worktitle{FullStack Developer at MONO (Fintech)}
+\newline
+In the dynamic environment of a \textbf{Startup}, I participated in various key activities to support the business and operations across the board. My main focus was the development, improvement, and incorporation of new features into the software product. I designed, planned, created, and executed \textbf{proofs of concept} to identify potential clients and market opportunities (\textit{Product Market Fit}). Additionally, I conducted onboarding and training for new developers, provided technical support for the application in production, and customer support. I also trained other areas such as business and design to ensure a comprehensive understanding of the product and alignment of goals. All these activities were centered around \textbf{Elixir} and its ecosystem, using \textbf{Phoenix} as a web framework, \textbf{LiveView}, \textbf{JavaScript}, and \textbf{Tailwind} for the frontend, and \textbf{Postgres} as the database. For our development ecosystem, we heavily relied on \textbf{Docker}, which allowed us to prepare our local environments and significantly streamline the development and deployment process. This particular combination was chosen to ensure high availability, crucial in the financial system, development speed, and ease of working with concurrent systems, without scaling resulting in higher operational and monetary costs. The team was organized using various \textbf{agile methodologies}. We adopted elements of \textbf{Scrum}, such as planning poker, dailies, and retros. We also implemented Kanban to visualize the workflow. The \textbf{Shape Up} framework was experimented with, which generates different dynamics for task and project execution.
+\begin{itemize}
+      \item Create and maintain features of the existing codebase, focusing on providing maximum value to customers.
+\item Analyze and fix bugs to ensure product quality.
+\item Propose and implement improvements to the existing code through code reviews, optimization of internal processes, and the creation of new features, speeding up the delivery of value.
+\item Develop a minimum viable product: a \textbf{white-label mobile wallet application} using our \textbf{API}. We used \textbf{low code} tools like \textbf{FlutterFlow} for the frontend, and \textbf{Python} along with \textbf{FastAPI} for the backend. \textbf{Supabase} was used for data storage and as an authentication provider.
+\item Read \textbf{open source} code to adapt it to internal needs.
+\item Participate in rotating technical support, using monitoring tools like \textbf{AppSignal} to identify and solve critical issues through code review, \textbf{SQL}, and log analysis.
+\item Take responsibility and authority from start to finish for the delivered \textit{feature}.
+\item Implement internal automations using \textbf{low code} tools like \textbf{n8n}, according to business needs.
+\item Design and plan major developments using \textbf{PlantUML} and \textbf{Excalidraw} to generate diagrams, foster discussion, anticipate failures, and review the feasibility and scope of requirements.
+\item Collaborate with the \textbf{UX} team to optimize the user experience in the product.
+\item Collaborate with operations to optimize infrastructure and improve \textbf{CI/CD} processes.
+\end{itemize}
+\end{tabularcv}
+\begin{tabularcv}
+2021-2022 & \worktitle{FullStack Developer}
+\newline
+In charge of developing and testing features using \textbf{Elixir}, \textbf{liveview} and \textbf{Phoenix} for web projects.
+\begin{itemize}
+    \item Creating and testing features related with the admin part of landing web page.
+    \item Read and understand open source code for a social media application written in Elixir (\textbf{Pleroma}) to adapt it to an specific use case (media content moderation), in a proof of concept, that censorship publications based on their content, without human intervention
+    \item \textbf{WEB3} applications, specially on the \textbf{Ethereum(Solidity)} and \textbf{Solana(Rust/anchor)}, in which different proof of concepts were done to see advantages and disadvantage of different chains to implement a protocol, communicating with the chains via \textbf{Javascript} client.
+\end{itemize}
+\end{tabularcv}
+
+\begin{tabularcv}
+2019-2021    &  \worktitle{DevOps engineer}{Perficient/PSL}
+                \newline In charge of maintenance, improve and give support to the agile life cycle (CI/CD), working with QA, business and developers to achieve a quick, continuous, quality and secure products.
+                \begin{itemize}
+                    \item Use and understating of management and configuration tools like \textbf{Puppet} and \textbf{Ansible}
+                    \item Cloud administration: \textbf{VPC(EC2 machines)}, \textbf{RDS}, \textbf{Elastic Search Service}, \textbf{Glue}, through \textbf{policies}. \textbf{SFTP} creation and support.
+                    \item Infrastructure automation via \textbf{Terraform}
+                    \item Task automation via \textbf{python} and \textbf{sh}
+                    \item code administration with \textbf{git} and \textbf{svn}
+                    \item Jobs creation and administration through pipelines, in order to facilitate \textbf{(CI/CD)} process in \textbf{Jenkins}, using pipelines as code \textbf{Groovy}, \textbf{JJB} and \textbf{sh, bash}
+                    \item \textbf{Networking} troubleshooting and debugging.
+                \end{itemize}
+                \
+\end{tabularcv}
+
+\begin{tabularcv}
+2017-2018   &   \worktitle{FullStack Developer}{ EAFIT University (Production Engineering Department)}
+                \newline Application for optimization in energy consumption for electric cars.
+                \begin{itemize}
+                % Example use of *maincolor* and *secondcolor* in the main document.    
+                  \item Programming in \textbf{Java}, back end services with \textbf{(Spring)}, with open source tools like  \textbf{osrm} and \textbf{postgresSQL} working with real word maps information for decide optimal paths .
+                  \item \textbf{Debian} Server administration and deployment.
+                  \item Creation and maintenance of \textbf{REST} services to be consumed by the app.
+                  \item Data handling and manipulation with Java.
+                \end{itemize} 
+\end{tabularcv} 
+
+
+
+\section*{Education}
+% Use tabularcv environment to make a two column environment. The left column 
+% is for the dates, the right one is for details of your education for example. 
+% You can use the command \worktitle{Study name/Job title}{Location}.
+\begin{tabularcv}
+2015-2019   &   \worktitle{Systems engineering}{EAFIT University} \link{https://drive.google.com/file/d/1qoOgISk8u03fq9ACYFR2u8Se5Dq4TEuw/view?usp=sharing}
+                \newline Passion for \textbf{programming}, \textbf{algorithms}, \textbf{testing} , \textbf{automation}, \textbf{Unix} system administration,  knowledge in agile methodologies, specially \textbf{scrum}. Always aware of good practice and cultural technology behaviors like \textbf{DevOps}, clean code,  design patterns.
+                
+                \begin{itemize}
+				  \item Course projects, highlighting: \textbf{Data Structures and Algorithms}, OS programming  \textbf{(POSIX)}, \textbf{arduino}, \textbf{mobile programming(Ionic, Android)}, \textbf{web services(AWS)}, Numerical methods with \textbf{functional programming}, \textbf{data science}.\link{https://drive.google.com/open?id=1DdJ-zSWe93dtckBD8_2KfLKlCP9mtG4L}, 
+				  \item Competitive programmer member since 2016.
+				  \item skills to solve problems with \textbf{algorithms}.
+				  \item \textbf{I like to gather resources and learn from them}.
+                \end{itemize}
+                \\
+                
+2003-2014   &   \worktitle{Bachelor}{San José de la Salle School}  \link{https://drive.google.com/open?id=1Z0-YVHVlFtDL2GwGxhAoMrZUSDcweuF7}
+                \newline Lasallista, raised up in a integral environment in all human aspects, with healthy coexistence, getting recognized by my \textbf{leadership }. Students leader and group leader in my last year
+              \link{https://drive.google.com/open?id=160q1YruZjghGWJOQEOUo_zYKsZ1OVReW}
+                \begin{itemize}
+				  \item  \textbf{Research} project about social behavior an it influence in students grades
+                  \item \textbf{Speaker} in \RomanNumeralCaps{2} forum in  social science.
+                \end{itemize} 
+
+                
+\end{tabularcv}
+
+\section*{Achievements}
+% Use \link{URL} to place an link. It inserts a fontawsome logo, where the color is determined from the color harmony settings.
+\begin{tabularcv}	
+2017    &   Honorable mention in  South American programming contest (north region) ACM ICPC. \link{https://drive.google.com/open?id=1GoiMosLKJv-FpBzl04NuQETugrnbYnaB}\\
+2017	&	 32 in National programming contest ACM ICPC.  \link{https://drive.google.com/open?id=1dNH9uwUQMZJxrwjlYxjF_f4irCCxR1Gn}\\
+2015    &   41 in National programming contest ACM ICPC  . \link{https://drive.google.com/file/d/1Zkp_3n9bve-QKLGidpJzQSrKxTxuB_bi/view?usp=sharing} \\
+
+                
+\end{tabularcv}
+
+\section*{Tech Skills}
+    \textit{ Cloud Providers:} \textbf{AWS, IBM, AZURE.}\\
+    \textit{Server configuration:} \textbf{NGINX, Apache.}\\
+    \textit{Build tools:}  \textbf{MIX, PIP, npm, cmake, MVN.}\\
+	\textit{Programming languages:}  \  \textbf{Elixir, Python, Javascript, SQL, C++, Java, Solidity, Visual Basic For Excel, C\#}\\
+	\textit{CI/CD:}\textbf{Github actions, Jenkins, Unit and Integration testing, pytest, Junit Framework.}\\
+    \textit{Monitoring:} \textbf{AppSignal, Sentry, Splunk, Kibana}\\
+	\textit{Data bases:} \textbf{PostgreSQl, RDS(AWS),  MongoDB, Oracle, MySql}.\\
+	\textit{Operating Systems:}  \textbf{MacOs, Linux based systems (Primarly debian family), Windows.}\\
+	\textit{Code administration: } \textbf{Git, Svn, Github, Gitlab, Bitbucket.}\\
+	\textit{Command line Tools:} \textbf{Shell, bash, zsh, PowerShell.}\\
+	\textit{Frameworks:} \textbf{LiveView, Phoenix, FastAPI, FlutterFlow, node, Spring, rails, Ionic, Android Studio}. \\
+	\textit{Virtualization:} \textbf{Docker, Virtual Box, Vagrant, WSL}.\\
+	\textit{Hardware:} \textbf{Arduino, Raspberry pi}.\\
+	\textit{Other tools:} \textbf{Excel, Calc(Libre Office), Numbers (MacOs), Mendeley, Latex, Postman, Bruno}.
+
+\section*{Languages}
+\begin{tabularcv}
+\textit{Spanish}     &	Native. \\
+\textit{English} & Advanced \textbf{B2}, I am capable of holding fluent conversations both technical and personal.\link {https://drive.google.com/open?id=1vMRxMQEZUpZY7qGLgneV0Vp1bBCL4sXO}\\
+\end{tabularcv}
+
+\section*{Interests}
+Practicing sports, socializing, creating things with code (music with Sonic Pi, algorithm contests), gaming enthusiast (video games, board games, card games...), passive learner, in my free time I like to see what new things I can learn for life in general.
+
+\section*{References}
+in case you need me, i will give them to you
+    
+\end{document}
+
+
