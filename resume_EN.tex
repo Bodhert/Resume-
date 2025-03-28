@@ -30,6 +30,9 @@
 %  *main* and *second* and can be used in the main document.	
 \newcommand{\RomanNumeralCaps}[1]
     {\MakeUppercase{\romannumeral #1}}
+    
+\usepackage[none]{hyphenat}
+\sloppy
 
 \begin{document}
 \pagestyle{empty} %to remove the page numbers
@@ -52,48 +55,57 @@
 
 
 \section*{Experience}
-\begin{tabularcv}
+
+2024-Current & \worktitle{Independent Software Contractor}{FullStack Engineer}
+\begin{itemize}
+  \item \textbf{Application Development:} Architecting and building a comprehensive web application from scratch—including database design, front-end, back-end, and CI/CD pipelines—to automate damage reports for the real estate sector.
+  
+  \item \textbf{Team Leadership:} Guiding cross-functional teams to deliver client-impacting features by coordinating with stakeholders, clients, and developers. Successfully managed feature breakdowns and weekly deliverables while continuously aligning with client feedback and evolving needs.
+  
+  \item \textbf{AI Integration:} Designing solutions that seamlessly integrate AI capabilities, either by consuming external OpenAPI endpoints or leveraging in-house solutions, to enhance end-user productivity.
+  
+  \item \textbf{OTP Optimization:} Developing fault-tolerant, scalable applications by fully utilizing OTP principles. Maintained zero downtime in production while optimizing resource usage and ensuring a cost-effective infrastructure.
+  
+  \item \textbf{Research and Development:} Rapidly prototyped innovative solutions to clarify ambiguous paths, always prioritizing flexibility and future scalability.
+\end{itemize}
+
 2022-2024 & \worktitle{MONO (Fintech Startup / Remote)}{FullStack Engineer}
 \begin{itemize}
-\item \textbf{Mobile application:} Developed a scalable white-label mobile application from scratch in under 1 month by strategically selecting a mix of low-code and custom coding tools to accelerate development while ensuring future scalability.
+\item \textbf{Mobile application:} Developed a scalable white-label mobile application from scratch in under 1 month , with 95\% of the proposed features working fully. Strategically selecting a mix of low-code and custom coding tools to accelerate development while ensuring an agile method of replication.
 \item \textbf{Tech Support}: Quickly resolved user issues by utilizing monitoring tools, log analysis, and debugging techniques to identify and fix problems as they arose.
 \item \textbf{Trainer:} Onboarded new developers into the culture and codebase, enabling them to make meaningful contributions within a month through tailored talks, pair programming, remote work culture integration, and structured feedback sessions.
 \item \textbf{Feature designer:} Proposed, developed, and reviewed software architectures to support new features in the existing codebase. Facilitated discussion and review sessions, created RFCs, and utilized software design tools to effectively document and communicate the proposed designs.
 \end{itemize}
-\end{tabularcv}
-\begin{tabularcv}
+
 2021-2022 & \worktitle{Freelance (Remote)}{Software Engineer}
 \begin{itemize}
     \item \textbf{Web development}: Developed a feauture on top of a social open-source Fediverse application, which automatically censors offensive content without human intervention by integrating APIs and adapting open-source code.
     \item \textbf{WEB3 development:} Tested various blockchain technologies, conducting proof-of-concept evaluations to assess the advantages and disadvantages of different chains for potential protocol implementation.
 \end{itemize}
-\end{tabularcv}
 
-\begin{tabularcv}
-2019-2021    &  \worktitle{Perficient/PSL(Hybrid)}{DevOps Engineer}
-        \begin{itemize}
-            \item \textbf{Servers management:} Successfully configured, set up, and fixed around 95\% machines across multiple regions, ensuring efficiency and accuracy through the use of configuration management tools.
+2019-2021 &  \worktitle{Perficient/PSL(Hybrid)}{DevOps Engineer}
+    \begin{itemize}
+        \item \textbf{Servers management:} Successfully configured, set up, and fixed around 95\% machines across multiple regions, ensuring efficiency and accuracy through the use of configuration management tools.
             \item \textbf{Cloud administration}: Developed on-demand infrastructure to meet business needs, with effective testing and validation of use cases, by leveraging Infrastructure as Code tools.
             \item \textbf{Database Migrations:} Successfully migrated around 98\% of the databases using scripting and cloud techniques, resulting in approximately 30\% savings in database costs.
             \item \textbf{Deployments:} Effectively deployed multiple products to production across the organization using CI/CD tools, enabling rapid validation of service statuses.
         \end{itemize}
-                \
-\end{tabularcv}
 
-\begin{tabularcv}
+        \
+                
 2017-2018   &   \worktitle{EAFIT University - Production Engineering Department (Hybrid)}{Research assistant}
                 \begin{itemize}
                 \item \textbf{Assistant:} Supported master student by providing tools and environments to help advance their research papers.
                 \item  \textbf{Web development:} Deployed a web service on university servers for student use, implementing pre-computed states to enhance response time.
                 \end{itemize} 
-\end{tabularcv} 
+
 
 
 \section*{Education}
 % Use tabularcv environment to make a two column environment. The left column 
 % is for the dates, the right one is for details of your education for example. 
 % You can use the command \worktitle{Study name/Job title}{Location}.
-\begin{tabularcv}
+
 2015-2019   &   \worktitle{EAFIT University}{Systems engineering} \link{https://drive.google.com/file/d/1qoOgISk8u03fq9ACYFR2u8Se5Dq4TEuw/view?usp=sharing}
 \newline
                 \textbf{Research assistant:} Application for optimizing energy consumption in electric cars.
@@ -102,24 +114,17 @@
                 \\
                 
                 
-\end{tabularcv}
+
 
 \section*{Projects}
 % Use \link{URL} to place an link. It inserts a fontawsome logo, where the color is determined from the color harmony settings.
 
-\textbf{Elixir cryptobot}: Learning how to create a trading bot that is responsive, resilient, and capable of handling concurrent tasks in real time, with some personalized tweaks along the way. \\
-\textbf{Sonic pi music exploration:} Exploring music production, composition, and live coding, all through the use of code. \\
-\textbf{Programming challenges:} Solving a wide range of problems, from mathematics and computer science to logic puzzles, using various programming languages such as Elixir, C++, Python, Java, JavaScript, and many more to come!
+\textbf{Elixir cryptobot} \link{https://github.com/Bodhert/ElixirTradingBot}: Learning how to create a trading bot that is responsive, resilient, and capable of handling concurrent tasks in real time, with some personalized tweaks along the way. \\
+\textbf{Sonic pi music exploration:}\link{https://github.com/Bodhert/Sonic-pi} Exploring music production, composition, and live coding, all through the use of code. \\
+\textbf{Programming challenges:}\link{https://github.com/Bodhert/Competitive-programing} Solving a wide range of problems, from mathematics and computer science to logic puzzles, using various programming languages such as Elixir, C++, Python, Java, JavaScript, and many more to come!
 \section*{Skills}
 	\textbf{Programming languages:} Elixir, Python, SQL, Javascript, Terraform.
-    \textbf{Tools:} AWS, Phoenix, LiveView, FastApi, GitHub actions, Jenkins, git, svn, PostgreSQL, Supabase, Shell/Bash, FlutterFlow, n8n, Docker, Ansible, Puppet. \textbf{Agile:} Scrum, ShapeUp. \textbf{Soft:} People Person, ownership, leadership, charismatic, discipline, respectful, organized.
-
-
-\section*{Languages}
-\begin{tabularcv}
-\textit{Spanish}     &	Native. \\
-\textit{English} & Advanced.\link {https://drive.google.com/open?id=1vMRxMQEZUpZY7qGLgneV0Vp1bBCL4sXO}\\
-\end{tabularcv}
+    \textbf{Tools:} AWS, Phoenix, LiveView, FastApi, GitHub actions, Jenkins, git, svn, PostgreSQL, Supabase, Shell/Bash, FlutterFlow, n8n, Docker, Ansible, Devops. \textbf{Agile:} Scrum, ShapeUp. \textbf{Soft:} People Person, ownership, leadership, charismatic, discipline, respectful, organized, communication, team work. \textbf{Languages:} Spanish(Native), English(Advanced) \link {https://drive.google.com/open?id=1vMRxMQEZUpZY7qGLgneV0Vp1bBCL4sXO}.
 
     
 \end{document}
